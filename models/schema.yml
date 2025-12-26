@@ -1,5 +1,6 @@
 models:
   - name: dim_listings_cleansed
+    description: Cleansed table which contains Airbnb listings.
     data_tests:
       - minimum_row_count:
           arguments:
@@ -8,6 +9,7 @@ models:
 
     columns:
       - name: listing_id
+        description: Primary key for listing
         data_tests:
           - unique
           - not_null
